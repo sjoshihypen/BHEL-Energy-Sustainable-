@@ -1,0 +1,9 @@
+autoencoder_model = None
+
+if os.path.exists(autoencoder_model_path):
+    try:
+        autoencoder_model = load_model(autoencoder_model_path)
+    except Exception as e:
+        st.error(f"Error loading Autoencoder model: {e}")
+else:
+    st.warning(f"Model file not found: {autoencoder_model_path}")

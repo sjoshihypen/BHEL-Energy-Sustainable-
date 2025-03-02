@@ -1,0 +1,9 @@
+cnn_model = None
+
+if os.path.exists(cnn_model_path):
+    try:
+        cnn_model = load_model(cnn_model_path)
+    except Exception as e:
+        st.error(f"Error loading CNN model: {e}")
+else:
+    st.warning(f"Model file not found: {cnn_model_path}")
