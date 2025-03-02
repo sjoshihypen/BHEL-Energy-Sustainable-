@@ -1,1 +1,1 @@
-# BHEL-Energy-Sustainable-
+# BHEL Energy Sustainable
